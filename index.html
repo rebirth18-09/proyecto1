@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="indexed.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+	<script src="pagina.js"></script>
+	<script src="paginas.js"></script>
+
+	
+    <title>proyecto</title>
+</head>
+<body>
+
+ 	
+  <script>
+    // Obtener el valor del hash en la URL
+    var hash = window.location.hash;
+
+    // Crear un nuevo elemento div con un ID único basado en el hash
+    var newDiv = document.createElement("div");
+    newDiv.id = hash.substring(1); // Eliminar el "#" del hash
+
+    // Agregar contenido al nuevo div
+    var content = document.createTextNode("Contenido de " + hash);
+    newDiv.appendChild(content);
+
+    // Agregar el nuevo div al cuerpo del documento
+    document.body.appendChild(newDiv);
+
+    // Ocultar todos los divs excepto el que corresponde al hash
+    var allDivs = document.querySelectorAll("div");
+    for (var i = 0; i < allDivs.length; i++) {
+      if (allDivs[i].id !== hash.substring(1)) {
+        allDivs[i].style.display = "none";
+      }
+    }
+  </script>
+
+  </div>
+
+
+
+	<div id="seccion1">
+   	 <p align="center"></p>
+		<img src="https://scontent.fmga3-1.fna.fbcdn.net/v/t39.30808-6/325987539_1140699649911914_4374350677154682688_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_ohc=PoN0pl3UebcAX_nsQnQ&_nc_ht=scontent.fmga3-1.fna&oh=00_AfCEDqgUC0r6UkHi0H3zg1B-9_654xVoo6kLARrHcyifCw&oe=64640EE0" style="float: center; margin: 10px;"">
+		<title>Formulario de registro veterinario</title>
+		</head>
+		<link rel="stylesheet" href="style.css">
+		<h1><i>CARTILLA VETERINARIA</i></h1>
+		<form>
+			<fieldset>
+				<b><i><legend>DATOS GENERALES<i></legend></b>
+				<label for="medico">Nombre del médico veterinario:</label>
+				<input type="text" id="medico" name="medico"><br>
+
+				<label for="especie">Especie de la mascota:</label>
+				<select id="especie" name="especie">
+					<option value="canino">Canino</option>
+					<option value="felino">Felino</option>
+				</select><br>
+
+				<label for="sexo">Sexo:</label>
+				<select id="sexo" name="sexo">
+					<option value="macho">Macho</option>
+					<option value="hembra">Hembra</option>
+				</select><br>
+
+				<label	label for="raza">Raza:</label>
+				<input type="text" id="raza" name="raza"><br>
+
+				<label for="color">Color:</label>
+				<input type="text" id="color" name="color"><br>
+
+				<label for="nombre_mascota">Nombre de la mascota:</label>
+				<input type="text" id="nombre_mascota" name="nombre_mascota"><br>
+
+				<label for="fecha_nacimiento">Fecha de nacimiento de la mascota:</label>
+				<input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+
+				<label for="nombre_propietario">Nombre del propietario:</label>
+				<input type="text" id="nombre_propietario" name="nombre_propietario"><br>
+
+				<label for="telefono_propietario">Número de teléfono del propietario:</label>
+				<input type="tel" id="telefono_propietario" name="telefono_propietario"><br>
+			
+			</fieldset>
+
+			<fieldset>
+				<b><i><legend>PROGRAMA DE VACUNACION</legend></i></b>
+				<label for="vacuna1">Vacuna 1:</label>
+				<input type="text" id="vacuna1" name="vacuna1">
+				<label for="fecha_vacuna1">Fecha:</label>
+				<input type="date" id="fecha_vacuna1" name="fecha_vacuna1"><br>
+
+				<label for="vacuna2">Vacuna 2:</label>
+				<input type="text" id="vacuna2" name="vacuna2">
+				<label for="fecha_vacuna2">Fecha:</label>
+				<input type="date" id="fecha_vacuna2" name="fecha_vacuna2"><br>
+
+				<label for="vacuna3">Vacuna 3:</label>
+				<input type="text" id="vacuna3" name="vacuna3">
+				<label for="fecha_vacuna3">Fecha:</label>
+				<input type="date" id="fecha_vacuna3" name="fecha_vacuna3"><br>
+
+				<label for="vacuna4">Vacuna 4:</label>
+				<input type="text" id="vacuna4" name="vacuna4">
+				<label for="fecha_vacuna4">Fecha:</label>
+				<input type="date" id="fecha_vacuna4" name="vacuna4"><br>
+
+				<label for="vacuna5">vacuna 5:</label>
+				<input type="text" id="vacuna5" name="vacuna5">
+				<label for="fecha_vacuna5">Fecha</label>
+				<input type="date" id="fecha_vacuna5" name="vacuna5"><br>
+
+				<label for="vacuna6">vacuna 6:</label>
+				<input type="text" id="vacuna6" name="vacuna6">
+				<label for="fecha_vacuna6">Fecha</label>
+				<input type="date" id="fecha_vacuna6" name="vacuna6"><br>
+			</fieldset>
+
+			<fieldset>
+				<b><i><legend>PROGRAMA DE DESPARASITACION</legend></i></b>
+				<lable for="primera desparasitacion">Primera desparasitacion</lable>
+				<input type="text" id="primra desparasitacion" name="primera desparasitacion">
+				<label for="fecha_primera desparasitacion">Fecha</label>
+				<input type="date" id="fecha_primera desparasitacion" name="primera desparasitacion"><br>
+
+				<lable for="segunda desparasitacion">Segunada desparasitacion</lable>
+				<input type="text" id="segunda desparasitacion" name="segunda desparasitacion">
+				<label for="fecha_segunda desparasitacion">Fecha</label>
+				<input type="date" id="fecha_segunda desparasitacion" name="segunda desparasithtacion"><br>
+
+				<lable for=" Tercera desparasitacion">Tercera desparasitacion</lable>
+				<input type="text" id="Tercera desparasitacion" name="Tercera desparasitacion">
+				<label for="fecha_Tercera desparasitacion">Fecha</label>
+				<input type="date" id="fecha_Tercera desparasitacion" name="Tercera desparasitacion"><br>
+
+				<lable for="Cuarta desparasitacion">Cuarta desparasitacion</lable>
+				<input type="text" id="Cuarta desparasitacion" name="Cuarta desparasitacion">
+				<label for="fecha_Cuarta desparasitacion">Fecha</label>
+				<input type="date" id="fecha_Cuarta desparasitacion" name="Cuarta desparasitacion"><br>
+
+				<lable for="Quinta desparasitacion">Quinta desparasitacion</lable>
+				<input type="text" id="Quinta desparasitacion" name="Quinta desparasitacion">
+				<label for="fecha_Quinta desparasitacion">Fecha</label>
+				<input type="date" id="fecha_Quinta desparasitacion" name="Quinta desparasitacion"><br>
+
+				<label for="Sexta desparasitacion">Sexta desparasitacion</lable>
+				<input type="text" id="Sexta desparasitacion" name="Sexta desparasitacion">
+				<label for="fecha_Sexta desparasitacion">Fecha</label>
+				<input type="date" id="fecha_Sexta desparasitacion" name="Sexta desparasitacion"><br>
+			</fieldset>
+		
+			<fieldset>
+				<b><I><legend>HISTORIAL MEDICO</legend></i></b>
+					<h4>Enfermedades que ha presentado</h4>
+					<select id="enfermedad" name="enfermedad">
+					<h5 value=>seleccione una enfermedad</h5>
+					<option value="enfermedad">Erliquia Canis</option>
+					<option value="enfermedad">parasitos</option>
+					<option value="enfermedad">putismo</option>
+					<option value="enfermedad">Insuficiencia renal</option>
+				</select><br>
+			</fieldset>
+           			 <input type="submit" name="Guardar" id="Guardar" value="Guardar">
+
+	</div>
+
+	<div id="seccion2">
+		<h1>Hola mundo</h1>
+	</div>
+	
+	<script>
+    var hash = window.location.hash;
+
+   
+    
+  </script>
+
+		</body>
+</html>

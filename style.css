@@ -1,0 +1,71 @@
+/* Reset de estilos para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #858585;
+}
+
+/* Estilos para el encabezado */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #665dbc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgb(255, 0, 0);
+}
+
+/* Estilos para los fieldsets */
+fieldset {
+  margin: 10px 0;
+  border: none;
+}
+
+fieldset legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilos para los inputs */
+input,
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.949);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón de envío */
+input[type="submit"] {
+  background-color: #0080ff;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0059b3;
+}
